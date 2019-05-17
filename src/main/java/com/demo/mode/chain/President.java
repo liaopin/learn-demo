@@ -1,5 +1,16 @@
 package com.demo.mode.chain;
 
+/**
+ * 
+ ************************************************************
+ * @类名 : President.java
+ *
+ * @DESCRIPTION :
+ * @AUTHOR : liaopin
+ * @DATE : 2019年5月17日
+ * @param <T>
+ ************************************************************
+ */
 public class President<T extends Message> extends Handler<T> {
 
     @Override

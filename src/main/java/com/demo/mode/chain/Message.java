@@ -1,5 +1,15 @@
 package com.demo.mode.chain;
 
+/**
+ * 
+ ************************************************************
+ * @类名 : Message.java
+ *
+ * @DESCRIPTION :
+ * @AUTHOR : liaopin
+ * @DATE : 2019年5月17日
+ ************************************************************
+ */
 public class Message {
     private MessageType messageType;
     private String message;

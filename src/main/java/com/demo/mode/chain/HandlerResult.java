@@ -1,5 +1,15 @@
 package com.demo.mode.chain;
 
+/**
+ * 
+ ************************************************************
+ * @类名 : HandlerResult.java
+ *
+ * @DESCRIPTION :
+ * @AUTHOR : liaopin
+ * @DATE : 2019年5月17日
+ ************************************************************
+ */
 public class HandlerResult {
     private String handlerName;
     private String msg;

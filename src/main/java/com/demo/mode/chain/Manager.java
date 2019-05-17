@@ -1,5 +1,16 @@
 package com.demo.mode.chain;
 
+/**
+ * 
+ ************************************************************
+ * @类名 : Manager.java
+ *
+ * @DESCRIPTION :
+ * @AUTHOR : liaopin
+ * @DATE : 2019年5月17日
+ * @param <T>
+ ************************************************************
+ */
 public class Manager<T extends Message> extends Handler<T> {
 
     @Override

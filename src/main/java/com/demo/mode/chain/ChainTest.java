@@ -3,6 +3,16 @@ package com.demo.mode.chain;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ ************************************************************
+ * @类名 : ChainTest.java
+ *
+ * @DESCRIPTION :
+ * @AUTHOR : liaopin
+ * @DATE : 2019年5月17日
+ ************************************************************
+ */
 public class ChainTest {
 
     public static void main(String[] args) {
@@ -10,9 +20,9 @@ public class ChainTest {
         Manager<Message> manager = new Manager<Message>();
         President<Message> president = new President<Message>();
         // msg --> employee --> manager --> president
-        //            |           |             |
-        //res  <--    |     <--   |     <--     |
-        
+        // | | |
+        // res <-- | <-- | <-- |
+
         employee.nextHandler(manager).nextHandler(president);
 
         List<Message> messages = new ArrayList<Message>();
