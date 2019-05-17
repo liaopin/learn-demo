@@ -22,10 +22,10 @@ public abstract class Handler<T extends Message> {
     };
 
     // 处理传递过来的时间
-    public abstract HandlerResult handleMessage(T message);
+    public abstract HandlerResult handleMessage(final T message);
 
     // 什么条件下当前handle可以处理msg
-    public abstract boolean canHandlerMessage(T message);
+    public abstract boolean canHandlerMessage(final T message);
 
     public List<HandlerResult> chainDoMessage(Handler<T> handler, List<T> messages) {
         List<HandlerResult> results = new ArrayList<HandlerResult>();
